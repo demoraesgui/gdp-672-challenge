@@ -5,7 +5,7 @@ Hi! this is a simple challenge for the **#GDP-672 and #GDP-671** job positions a
 
 ### App Description
 
-In this challenge you will create a React Web App that interacts with the [Public Covid19 API](https://covid19api.com/).
+In this challenge you will create a React Web App that interacts with the [Public COVID19 API](https://covid19api.com/).
 
 * **GET** World Total Cases
 
@@ -13,7 +13,7 @@ In this challenge you will create a React Web App that interacts with the [Publi
   
 * **GET:** Cases By Country
 
-  _The user must be able to search for country specific data. This can be done either with a dropdown or with a standard text input. This should shown the current count of confirmed, recovered and the total of deaths caused by COVID-19 in that country._
+  _The user must be able to search for country specific data. This can be done either with a dropdown or with a standard text input. This should shown the current count of confirmed, recovered and the total of deaths caused by COVID19 in that country._
   
 * **GET:** Cases By Country On a Specific Date
 
@@ -21,7 +21,7 @@ In this challenge you will create a React Web App that interacts with the [Publi
   
   * **GET:** List Cases of a Country from a time period
 
-  _If the user selects a time period bigger than a day, then the page must list the data for COVID-19 cases for each day from the selected time period._
+  _If the user selects a time period bigger than a day, then the page must list the data for COVID19 cases for each day from the selected time period._
   
   
 ### Some observations and tips
