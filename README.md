@@ -7,7 +7,7 @@ Hi! this is a simple challenge for the **#GDP-672 and #GDP-671** job positions a
 
 In this challenge you will create a React Web App that interacts with the [Public COVID19 API](https://covid19api.com/).
 
-* **GET** World Total Cases
+* **GET:** World Total Cases
 
   _The App should show total amount of confirmed, recovered and the total of deaths caused by COVID19._
   
