@@ -1,7 +1,7 @@
 ![](https://lh3.googleusercontent.com/-SjJCP2AntwI/XoYRxI-hBjI/AAAAAAAABA4/bFi0th7AKGgQFVIOB8L-GiWSZriYhI6MgCK8BGAsYHg/s0/2020-04-02.png)
 # Instituto Atlântico React Developer Challenge
 
-Hi! this is a simple challenge for the **#GDP-672** job position at Instituto Atlântico. This challenge consists of reproducing data from a public API on a ReactJS web app. You are free to use any additional libs, npm packages, design frameworks (like BootStrap or Material), CSS frameworks or bundlers, as long as you use React! To start, simply **fork** this repository, and when you're done, submit a Pull Request for us to review your code.
+Hi! this is a simple challenge for the **#GDP-672 and #GDP-671** job positions at Instituto Atlântico. This challenge consists of reproducing data from a public API on a ReactJS web app. You are free to use any additional libs, npm packages, design frameworks (like BootStrap or Material), CSS frameworks or bundlers, as long as you use React! To start, simply **fork** this repository, and when you're done, submit a Pull Request for us to review your code.
 
 ### App Description
 
