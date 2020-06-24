@@ -5,11 +5,11 @@ Hi! this is a simple challenge for the **#GDP-672** job position at Instituto At
 
 ### App Description
 
-In this challenge you will create a React Web App that interacts with the [Public Covid-19 API](https://covid19api.com/).
+In this challenge you will create a React Web App that interacts with the [Public Covid19 API](https://covid19api.com/).
 
 * **GET** World Total Cases
 
-  _The App should show total amount of confirmed, recovered and the total of deaths caused by COVID-19._
+  _The App should show total amount of confirmed, recovered and the total of deaths caused by COVID19._
   
 * **GET:** Cases By Country
 
@@ -38,6 +38,7 @@ In this challenge you will create a React Web App that interacts with the [Publi
 * Creating simple, reusable components and reusing them across your code is a desired skill.
 * Virtualization is not mandatory, but will be a bonus. At Atlântico, we often use [Docker](https://www.docker.com/), and you can use [Docker Toolbox](https://docs.docker.com/toolbox/overview/) if your computer does not meet the requirements for Docker Desktop.
 * Hosting is not mandatory and you will not be penalized, but it is a big bonus. Github Pages offers a nice and free way to host simple web apps, but you could also try [Heroku](https://www.heroku.com/). _Hint: For an even bigger bonus, user [Webpack](https://webpack.js.org/) to build your app for production._ 
+* Docs for the COVID19 Public API: https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
 
 
 
