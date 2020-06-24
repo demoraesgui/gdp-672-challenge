@@ -5,7 +5,7 @@ Hi! this is a simple challenge for the **#GDP-672 and #GDP-671** job positions a
 
 ### App Description
 
-In this challenge you will create a React Web App that interacts with the [Public COVID19 API](https://covid19api.com/).
+In this challenge you will create a React Web App that interacts with the [COVID19 Public API](https://covid19api.com/).
 
 * **GET:** World Total Cases
 
