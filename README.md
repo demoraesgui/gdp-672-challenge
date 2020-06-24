@@ -21,7 +21,7 @@ In this challenge you will create a React Web App that interacts with the [Publi
   
   * **GET:** List Cases of a Country from a time period
 
-  _If the user selects a time period bigger than a day, then the page must list the data for COVID19 cases for each day from the selected time period._
+    _If the user selects a time period bigger than a day, then the page must list the data for COVID19 cases for each day from the selected time period._
   
   
 ### Some observations and tips
