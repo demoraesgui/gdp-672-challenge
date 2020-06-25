@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
+import { AppLayout } from './layouts';
 
 const App = () => {
   const [data, setData] = useState();
@@ -9,7 +10,11 @@ const App = () => {
     );
   });
 
-  return <pre>{JSON.stringify(data, null, 2)}</pre>;
+  return (
+    <AppLayout>
+      <pre>{JSON.stringify(data, null, 2)}</pre>;
+    </AppLayout>
+  );
 };
 
 export default App;
