@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import React from 'react';
 import { AppLayout } from './layouts';
+import { CountriesDropdown } from './components';
 
 const App = () => {
-  const [data, setData] = useState();
-  useEffect(() => {
-    Axios.get(`https://api.covid19api.com/summary`).then((res) =>
-      setData(res.data.Global),
-    );
-  });
-
   return (
     <AppLayout>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <CountriesDropdown />
     </AppLayout>
   );
 };
