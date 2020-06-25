@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <AppLayout>
-      <pre>{JSON.stringify(data, null, 2)}</pre>;
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </AppLayout>
   );
 };
