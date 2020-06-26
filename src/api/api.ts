@@ -21,7 +21,7 @@ export function getCountryDataByDate(
 ) {
   if (country && fromDate && toDate) {
     const from = `${format(addDays(fromDate, -1), 'yyyy-MM-dd')}T00:00:00Z`;
-    const to = `${format(addDays(toDate, -1), 'yyyy-MM-dd')}T00:00:00Z`;
+    const to = `${format(addDays(toDate, -1), 'yyyy-MM-dd')}T23:59:59Z`;
     return api.get(`/country/${country.Slug}`, {
       params: {
         from,

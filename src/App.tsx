@@ -38,8 +38,13 @@ const App = () => {
             NewRecovered={selectedCountry?.NewRecovered ?? globalData?.NewRecovered}
           ></SummaryCard>
         </Grid>
+        {selectedCountry && (
+          <Grid container direction="row" justify="space-evenly" alignItems="center" style={{ textAlign: 'center' }}>
+            {/* inside DateRangePicker has Grid items */}
+            <DateRangePicker selectedCountry={selectedCountry} />
+          </Grid>
+        )}
       </Grid>
-      {selectedCountry && <DateRangePicker selectedCountry={selectedCountry} />}
     </AppLayout>
   );
 };
