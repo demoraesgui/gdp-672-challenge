@@ -3,43 +3,48 @@ export interface CountryType {
   Slug: string;
   ISO2: string;
 }
+export interface CasesData {
+  NewConfirmed?: number;
+  TotalConfirmed?: number;
+  NewDeaths?: number;
+  TotalDeaths?: number;
+  NewRecovered?: number;
+  TotalRecovered?: number;
+}
+
+export interface CountryData extends CasesData {
+  Country?: string;
+  CountryCode?: string;
+  Slug?: string;
+  Date?: string;
+}
+
+export interface SummaryData {
+  Global?: CasesData;
+  Countries?: CountryData[];
+  Date?: string;
+}
+
+export interface CountriesDropdownProps {
+  selectedCountry: CountryData | null;
+  setSelectedCountry: React.Dispatch<React.SetStateAction<CountryData | null>>;
+}
 
 export interface ConfirmedCasesProps {
-  totalConfirmed: number;
-  newConfirmed: number;
+  TotalConfirmed?: number;
+  NewConfirmed?: number;
 }
 
 export interface DeathCasesProps {
-  totalDeaths: number;
-  newDeaths: number;
+  TotalDeaths?: number;
+  NewDeaths?: number;
 }
 
 export interface RecoveredCasesProps {
-  totalRecovered: number;
-  newRecovered: number;
+  TotalRecovered?: number;
+  NewRecovered?: number;
 }
 
 export interface SummaryCardProps extends ConfirmedCasesProps, DeathCasesProps, RecoveredCasesProps {
   title: string;
-}
-
-export interface CasesData {
-  newConfirmed?: number;
-  totalConfirmed?: number;
-  newDeaths?: number;
-  totalDeaths?: number;
-  newRecovered?: number;
-  totalRecovered?: number;
-}
-
-export interface CountryData extends CasesData {
-  country?: string;
-  countryCode?: string;
-  slug?: string;
-  date?: string;
-}
-
-export interface SummaryData {
-  global?: CasesData;
-  countries?: CountryData[];
 }

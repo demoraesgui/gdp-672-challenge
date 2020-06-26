@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { DeathCasesProps } from '../../@types';
 
-const DeathCases: React.FC<DeathCasesProps> = ({ totalDeaths, newDeaths }) => {
+const DeathCases: React.FC<DeathCasesProps> = ({ TotalDeaths, NewDeaths }) => {
   return (
     <>
       <Grid container direction="column" justify="center" alignItems="center">
@@ -13,19 +13,19 @@ const DeathCases: React.FC<DeathCasesProps> = ({ totalDeaths, newDeaths }) => {
         </Grid>
         <Grid item>
           <Typography variant="body2" color="error">
-            {totalDeaths}
+            {TotalDeaths}
           </Typography>
         </Grid>
-        <Grid item>
+        {/* <Grid item>
           <Typography variant="h6" component="h2" color="error">
             New Deaths
           </Typography>
         </Grid>
         <Grid item>
           <Typography variant="body2" color="error">
-            {newDeaths}
+            {NewDeaths}
           </Typography>
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );

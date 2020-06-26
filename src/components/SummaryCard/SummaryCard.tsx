@@ -13,12 +13,12 @@ const useStyles = makeStyles({
 
 const SummaryCard: React.FC<SummaryCardProps> = ({
   title,
-  totalConfirmed,
-  totalDeaths,
-  totalRecovered,
-  newDeaths,
-  newRecovered,
-  newConfirmed,
+  TotalConfirmed,
+  TotalDeaths,
+  TotalRecovered,
+  NewDeaths,
+  NewRecovered,
+  NewConfirmed,
 }) => {
   const classes = useStyles();
 
@@ -28,13 +28,13 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
       <CardContent className={classes.root}>
         <Grid container justify="space-around" alignItems="center">
           <Grid item>
-            <ConfirmedCases totalConfirmed={totalConfirmed} newConfirmed={newConfirmed} />
+            <ConfirmedCases TotalConfirmed={TotalConfirmed} NewConfirmed={NewConfirmed} />
           </Grid>
           <Grid item>
-            <DeathCases totalDeaths={totalDeaths} newDeaths={newDeaths} />
+            <DeathCases TotalDeaths={TotalDeaths} NewDeaths={NewDeaths} />
           </Grid>
           <Grid item>
-            <RecoveredCases totalRecovered={totalRecovered} newRecovered={newRecovered} />
+            <RecoveredCases TotalRecovered={TotalRecovered} NewRecovered={NewRecovered} />
           </Grid>
         </Grid>
       </CardContent>
