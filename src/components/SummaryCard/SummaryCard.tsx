@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Grid,
-  makeStyles,
-} from '@material-ui/core';
+import { Card, CardContent, CardHeader, Grid, makeStyles } from '@material-ui/core';
 import ConfirmedCases from './ConfirmedCases';
 import DeathCases from './DeathCases';
 import RecoveredCases from './RecoveredCases';
@@ -34,22 +28,13 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
       <CardContent className={classes.root}>
         <Grid container justify="space-around" alignItems="center">
           <Grid item>
-            <ConfirmedCases
-              totalConfirmed={totalConfirmed}
-              newConfirmed={newConfirmed}
-            />
+            <ConfirmedCases totalConfirmed={totalConfirmed} newConfirmed={newConfirmed} />
           </Grid>
           <Grid item>
-            <DeathCases
-              totalDeaths={totalDeaths}
-              newDeaths={newDeaths}
-            />
+            <DeathCases totalDeaths={totalDeaths} newDeaths={newDeaths} />
           </Grid>
           <Grid item>
-            <RecoveredCases
-              totalRecovered={totalRecovered}
-              newRecovered={newRecovered}
-            />
+            <RecoveredCases totalRecovered={totalRecovered} newRecovered={newRecovered} />
           </Grid>
         </Grid>
       </CardContent>

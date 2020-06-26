@@ -6,10 +6,7 @@ import { CountryType } from '../../@types';
 
 const CountriesDropdown: React.FC = () => {
   const [countries, setCountries] = useState<CountryType[]>([]);
-  const [
-    selectedCountry,
-    setSelectedCountry,
-  ] = React.useState<CountryType | null>(null);
+  const [selectedCountry, setSelectedCountry] = React.useState<CountryType | null>(null);
   useEffect(() => {
     getCountries().then((data) => setCountries(data));
   }, []);
@@ -23,11 +20,8 @@ const CountriesDropdown: React.FC = () => {
       options={countries}
       getOptionLabel={(countrie) => countrie.Country}
       style={{ width: 300 }}
-      disableCloseOnSelect
       clearOnEscape
-      renderInput={(params) => (
-        <TextField {...params} label="Country" variant="standard" />
-      )}
+      renderInput={(params) => <TextField {...params} label="Country" variant="standard" />}
     />
   );
 };

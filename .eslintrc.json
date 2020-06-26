@@ -3,10 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": [
-    "eslint:recommended",
-    "react-app"
-  ],
+  "extends": ["eslint:recommended", "react-app"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"

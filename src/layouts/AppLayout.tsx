@@ -8,9 +8,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
     <>
       <AppBar>
         <Toolbar>
-          <Typography variant="h6">
-            Coronavirus(COVID-19) outbreak tracker
-          </Typography>
+          <Typography variant="h6">Coronavirus(COVID-19) outbreak tracker</Typography>
         </Toolbar>
       </AppBar>
       <Toolbar />

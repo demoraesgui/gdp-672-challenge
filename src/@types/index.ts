@@ -19,9 +19,6 @@ export interface RecoveredCasesProps {
   newRecovered: number;
 }
 
-export interface SummaryCardProps
-  extends ConfirmedCasesProps,
-    DeathCasesProps,
-    RecoveredCasesProps {
+export interface SummaryCardProps extends ConfirmedCasesProps, DeathCasesProps, RecoveredCasesProps {
   title: string;
 }

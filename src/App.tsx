@@ -6,16 +6,9 @@ import { Grid, Typography } from '@material-ui/core';
 const App = () => {
   return (
     <AppLayout>
-      <Grid
-        container
-        direction="row"
-        justify="space-evenly"
-        alignItems="center"
-      >
+      <Grid container direction="row" justify="space-evenly" alignItems="center">
         <Grid item>
-          <Typography variant="h5">
-            Select a country to retrieve data from:
-          </Typography>
+          <Typography variant="h5">Select a country to retrieve data from:</Typography>
         </Grid>
         <Grid item>
           <CountriesDropdown />

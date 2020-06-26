@@ -2,18 +2,10 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { ConfirmedCasesProps } from '../../@types';
 
-const ConfirmedCases: React.FC<ConfirmedCasesProps> = ({
-  totalConfirmed,
-  newConfirmed,
-}) => {
+const ConfirmedCases: React.FC<ConfirmedCasesProps> = ({ totalConfirmed, newConfirmed }) => {
   return (
     <React.Fragment>
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-      >
+      <Grid container direction="column" justify="center" alignItems="center">
         <Grid item>
           <Typography variant="h6" component="h2" color="primary">
             Total Confirmed
