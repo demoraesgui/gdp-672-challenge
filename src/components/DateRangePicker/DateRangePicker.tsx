@@ -6,14 +6,18 @@ import { CountryData } from '../../@types';
 import { isSameDay } from 'date-fns';
 import { getCountryDataByDate } from '../../api';
 import { Grid, Typography } from '@material-ui/core';
+import { useStoreActions } from '../../store';
 
 const DateRangePicker: React.FC<{ selectedCountry: CountryData | null }> = ({ selectedCountry }) => {
   const [selectedInitialDate, setSelectedInitialDate] = useState<MaterialUiPickersDate>(new Date());
   const [selectedFinalDate, setSelectedFinalDate] = useState<MaterialUiPickersDate>(new Date());
+  const setCountryDataByDate = useStoreActions((actions) => actions.covid.setCountryDataByDate);
 
   useEffect(() => {
-    getCountryDataByDate(selectedCountry, selectedInitialDate, selectedFinalDate)?.then(console.log);
-  }, [selectedCountry, selectedInitialDate, selectedFinalDate]);
+    getCountryDataByDate(selectedCountry, selectedInitialDate, selectedFinalDate)
+      ?.then((res) => res.data)
+      .then(setCountryDataByDate);
+  }, [selectedCountry, selectedInitialDate, selectedFinalDate, setCountryDataByDate]);
 
   //@ts-ignore
   const isntSameDay = !isSameDay(selectedInitialDate, selectedFinalDate);

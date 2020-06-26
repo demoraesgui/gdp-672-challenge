@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { AppLayout } from './layouts';
-import { CountriesDropdown, SummaryCard } from './components';
+import { CountriesDropdown, SummaryCard, CountryDataTable } from './components';
 import { Grid, Typography } from '@material-ui/core';
 import { getSummaryData } from './api';
 import { useStoreActions, useStoreState } from './store';
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <AppLayout>
-      <Grid container direction="row" justify="space-evenly" alignItems="center">
+      <Grid container direction="row" justify="center" alignItems="center" spacing={4} style={{ marginBottom: 16 }}>
         <Grid item>
           <Typography variant="h5">Select a country to retrieve data from:</Typography>
         </Grid>
@@ -26,22 +26,27 @@ const App = () => {
           <CountriesDropdown selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry} />
         </Grid>
       </Grid>
-      <Grid container justify="space-evenly" alignItems="center">
+      <Grid container justify="center" alignItems="center" spacing={4} style={{ marginBottom: 16 }}>
         <Grid item>
           <SummaryCard
             title={`${selectedCountry?.Country ?? 'Global'} cases today`}
-            TotalConfirmed={selectedCountry?.TotalConfirmed ?? globalData?.TotalConfirmed}
-            TotalDeaths={selectedCountry?.TotalDeaths ?? globalData?.TotalDeaths}
-            TotalRecovered={selectedCountry?.TotalRecovered ?? globalData?.TotalRecovered}
-            NewDeaths={selectedCountry?.NewDeaths ?? globalData?.NewDeaths}
-            NewConfirmed={selectedCountry?.NewConfirmed ?? globalData?.NewConfirmed}
-            NewRecovered={selectedCountry?.NewRecovered ?? globalData?.NewRecovered}
+            selectedCountry={selectedCountry ?? globalData ?? {}}
           ></SummaryCard>
         </Grid>
         {selectedCountry && (
-          <Grid container direction="row" justify="space-evenly" alignItems="center" style={{ textAlign: 'center' }}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+            style={{ textAlign: 'center', marginBottom: 16 }}
+          >
             {/* inside DateRangePicker has Grid items */}
             <DateRangePicker selectedCountry={selectedCountry} />
+            <Grid item xs={12} style={{ marginBottom: 16 }}>
+              <CountryDataTable></CountryDataTable>
+            </Grid>
           </Grid>
         )}
       </Grid>

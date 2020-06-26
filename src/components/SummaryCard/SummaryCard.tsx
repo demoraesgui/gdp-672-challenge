@@ -18,16 +18,9 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const SummaryCard: React.FC<SummaryCardProps> = ({
-  title,
-  TotalConfirmed,
-  TotalDeaths,
-  TotalRecovered,
-  NewDeaths,
-  NewRecovered,
-  NewConfirmed,
-}) => {
+const SummaryCard: React.FC<SummaryCardProps> = ({ title, selectedCountry }) => {
   const classes = useStyles();
+  const { TotalConfirmed, TotalDeaths, TotalRecovered } = selectedCountry;
 
   return (
     <Card>
@@ -35,13 +28,13 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
       <CardContent className={classes.root}>
         <Grid container justify="space-around" alignItems="center">
           <Grid item sm={4} xs={12}>
-            <ConfirmedCases TotalConfirmed={TotalConfirmed} NewConfirmed={NewConfirmed} />
+            <ConfirmedCases TotalConfirmed={TotalConfirmed} />
           </Grid>
           <Grid item sm={4} xs={12}>
-            <DeathCases TotalDeaths={TotalDeaths} NewDeaths={NewDeaths} />
+            <DeathCases TotalDeaths={TotalDeaths} />
           </Grid>
           <Grid item sm={4} xs={12}>
-            <RecoveredCases TotalRecovered={TotalRecovered} NewRecovered={NewRecovered} />
+            <RecoveredCases TotalRecovered={TotalRecovered} />
           </Grid>
         </Grid>
       </CardContent>

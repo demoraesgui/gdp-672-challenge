@@ -25,6 +25,21 @@ export interface SummaryData {
   Date?: string;
 }
 
+export interface CountryDataByDate {
+  Country?: string;
+  CountryCode?: string;
+  Province?: string;
+  City?: string;
+  CityCode?: string;
+  Lat?: string;
+  Lon?: string;
+  Confirmed?: number;
+  Deaths?: number;
+  Recovered?: number;
+  Active?: number;
+  Date?: string;
+}
+
 export interface CountriesDropdownProps {
   selectedCountry: CountryData | null;
   setSelectedCountry: React.Dispatch<React.SetStateAction<CountryData | null>>;
@@ -47,4 +62,5 @@ export interface RecoveredCasesProps {
 
 export interface SummaryCardProps extends ConfirmedCasesProps, DeathCasesProps, RecoveredCasesProps {
   title: string;
+  selectedCountry: CountryData;
 }

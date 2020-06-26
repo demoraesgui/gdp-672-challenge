@@ -12,13 +12,14 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
         </Toolbar>
       </AppBar>
       <Toolbar />
+      <Toolbar />
 
       <Grid container>
-        <Grid item xs={1} />
-        <Grid item xs={10}>
+        <Grid item xs={2} />
+        <Grid item xs={8}>
           {children}
         </Grid>
-        <Grid item xs={1} />
+        <Grid item xs={2} />
       </Grid>
     </>
   );

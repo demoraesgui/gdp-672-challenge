@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { RecoveredCasesProps } from '../../@types';
 
-const RecoveredCases: React.FC<RecoveredCasesProps> = ({ NewRecovered, TotalRecovered }) => {
+const RecoveredCases: React.FC<RecoveredCasesProps> = ({ TotalRecovered }) => {
   return (
     <Grid container direction="column" justify="center" alignItems="center">
       <Grid item>
@@ -15,16 +15,6 @@ const RecoveredCases: React.FC<RecoveredCasesProps> = ({ NewRecovered, TotalReco
           {TotalRecovered}
         </Typography>
       </Grid>
-      {/* <Grid item>
-        <Typography variant="h6" component="h2" style={{ color: 'green' }}>
-          New Recovered
-        </Typography>
-      </Grid>
-      <Grid item>
-        <Typography variant="body2" style={{ color: 'green' }}>
-          {NewRecovered}
-        </Typography>
-      </Grid> */}
     </Grid>
   );
 };
