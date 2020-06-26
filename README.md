@@ -44,3 +44,38 @@ In this challenge you will create a React Web App that interacts with the [COVID
 
 
 **Good Luck!**
+
+### Usage 
+
+To start development server just run: 
+```sh
+yarn start
+```
+
+To build the App run: 
+```sh
+yarn build
+```
+### Folder Structure
+
+* in the root of the project we have the configuration files.
+* all the code lives inside of src folder
+* @types folders has most of the typings used throughout the project
+* layouts folder has components to help construct the UI layout by using the children props
+* components folder has the most of the components of the project 
+* models and store folder has the easy-peasy configuration
+* api folder was used to create a instance of the axios package to help the communication with the API
+
+### Libraries
+
+This app uses a number of open source projects:
+
+* First [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) were used to bundle and transpile the TypeScript code into static files.
+* [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) were used together with [husky](https://github.com/typicode/husky) and [lintstaged](https://github.com/okonet/lint-staged)
+to enforce code style and linting for every commit by using git hooks.
+* Most of the UI was made using [Material-UI](https://material-ui.com/) components levaraging the Grid system provided.
+* For managing state [easy-peasy](https://easy-peasy.now.sh/) was the chosen was, mostly for the clean and simple API provided and for using Redux under the hood.
+* [Axios](https://github.com/axios/axios) was use for making HTTP calls to the backend.
+
+
+
