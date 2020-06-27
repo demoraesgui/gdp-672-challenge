@@ -45,6 +45,10 @@ In this challenge you will create a React Web App that interacts with the [COVID
 
 **Good Luck!**
 
+### App Demo
+
+[Covid-19-APP](https://guilhermevdm.github.io/gdp-672-challenge/)
+
 ### Usage 
 
 To start development server just run: 
@@ -55,6 +59,11 @@ yarn start
 To build the App run: 
 ```sh
 yarn build
+```
+
+to serve the the static files:
+```sh
+yarn serve
 ```
 ### Folder Structure
 

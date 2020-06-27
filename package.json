@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "preserve": "yarn build",
+    "serve": "serve dist"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
@@ -39,6 +41,7 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "react-hot-loader": "^4.12.21",
+    "serve": "^11.3.2",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
